@@ -15,7 +15,7 @@ jobs:
       - name: Install and Test 🔧
         run: |
           yarn install
-          CI=true yarn test
+          yarn test
 
   build-and-deploy:
     runs-on: ubuntu-latest
