@@ -5,6 +5,9 @@ import { Avatar } from './Avatar';
 export default {
     title: 'Design System/Avatar',
     component: Avatar,
+    parameters: {
+        componentSubtitle: 'Displays an image that represents a user or organization',
+    },
 };
 
 export const Standard = (args) => <Avatar {...args} />;
@@ -26,6 +29,12 @@ Sizes.args = {
     username: 'Tom Coleman',
     src: 'https://avatars2.githubusercontent.com/u/132554',
 };
+Sizes.parameters = {
+    docs: {
+        // The story now contains a description
+        storyDescription: '4 sizes are supported.',
+    },
+};
 
 export const Initials = (args) => (
     <div>
@@ -46,6 +55,11 @@ export const Loading = (args) => (
 );
 Loading.args = {
     loading: true,
+};
+Loading.parameters = {
+    docs: {
+        storyDescription: 'Use the loading state to indicate that the data Avatar needs is still loading.',
+    },
 };
 
 export const Large = (args) => (
