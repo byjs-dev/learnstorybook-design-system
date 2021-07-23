@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Test, Build and Deploy
 on: [push]
 jobs:
   test:
@@ -12,9 +12,9 @@ jobs:
           node-version: '16'
           cache: 'yarn'
 
-      - name: Install and Test 🔧
+      - name: Test 🔧
         run: |
-          yarn install
+          yarn
           yarn test
 
   build-and-deploy:
