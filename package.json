@@ -1,6 +1,6 @@
 {
     "name": "@byjs/learnstorybook-design-system",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": false,
     "dependencies": {
         "@testing-library/jest-dom": "^5.11.4",
@@ -21,7 +21,8 @@
         "storybook": "start-storybook -p 6006 -s public",
         "build-storybook": "build-storybook -s public",
         "build-storybook-docs": "build-storybook -s public --docs",
-        "prettier:write": "prettier --write '{.storybook, src}/**/*.{js,jsx,ts,tsx}'"
+        "prettier:write": "prettier --write '{.storybook, src}/**/*.{js,jsx,ts,tsx}'",
+        "release": "auto shipit --base-branch=main"
     },
     "eslintConfig": {
         "extends": [
